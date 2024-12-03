@@ -6,7 +6,7 @@ export const logChecker = (req: Request, res: Response, next: NextFunction) => {
   try {
     const authHeader = req.headers["authheader"];
     const userIp = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
-    if (authHeader !== "token1234") {
+    if (authHeader !== process.env.ACCESS_TOKEN) {
       // @ts-ignore
       req.result = false; 
       logModule(userIp as string);
