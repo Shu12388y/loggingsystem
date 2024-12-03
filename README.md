@@ -1,4 +1,4 @@
-# Node.js Cluster Module Example
+# Logging System
 
 This project demonstrates how to use the `cluster` module in Node.js to improve application scalability and resilience by utilizing multiple CPU cores.
 
